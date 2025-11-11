@@ -1,0 +1,162 @@
+/* Complete CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Root Changes */
+:root {
+    /* Colors */
+    --clr-green: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-grey-700: hsl(0, 0%, 20%);
+    --clr-grey-800: hsl(0, 0%, 12%);
+    --clr-grey-900: hsl(0, 0%, 8%);
+
+    /* Font */
+    --FF: "Inter", sans-serif;
+
+    --FS-12: 0.8rem;
+    --FS-14: 0.9rem;
+    --FS-16: 1rem;
+
+    --FW-400: 400;
+    --FW-600: 600;
+    --FW-700: 700;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-14);
+    font-weight: var(--FW-400);
+    color: var(--clr-white);
+}
+
+.person-name {
+    font-weight: var(--FW-700);
+    margin-bottom: 10px;
+}
+
+.person-location {
+    font-weight: var(--FW-600);
+    color: var(--clr-green);
+    font-size: var(--FS-16);
+}
+
+.person-quote {
+    font-size: var(--FS-12);
+}
+
+#social-media-link {
+    font-weight: var(--FW-600);
+    color: var(--clr-white);
+}
+
+/* General -- Mobile First */
+body {
+    max-width: 375px;
+    background-color: var(--clr-grey-900);
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 325px;
+    max-height: 100%;
+    background-color: var(--clr-grey-800);
+    margin: 4em auto;
+    border-radius: 8px;
+    padding: 1.875em;
+}
+
+.person-image {
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 35%;
+    margin-bottom: 1.2em;
+}
+
+.person-name,
+.person-location {
+    text-align: center;
+}
+
+.person-location {
+    margin-bottom: 1.2em;
+}
+
+.person-quote {
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+#social-media-link {
+    margin-bottom: 1em;
+    background-color: var(--clr-grey-700);
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 0.6em;
+}
+
+#social-media-link:hover,
+#social-media-link:active {
+    background-color: var(--clr-green);
+    color: var(--clr-black);
+}
+
+/* General -- Desktop View */
+@media (min-width: 1024px) {
+    body {
+        max-width: 1024px;
+    }
+
+    .container {
+        margin-top: 4.688em;
+        max-width: 500px;
+    }
+
+    .person-quote {
+        font-size: var(--FS-14);
+    }
+}
