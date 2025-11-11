@@ -31,8 +31,8 @@ Desktop View
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/blog-preview-card-p6QKihu5g9)
+- [Live Site URL](https://kylecreate-projects.netlify.app/fem%20-%20blog%20preview/index.html)
 
 ## My process
 
