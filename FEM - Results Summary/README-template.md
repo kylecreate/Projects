@@ -27,14 +27,14 @@ Users should be able to:
 ### Screenshot
 
 Mobile View
-![]()
+![](./screenshots/ResultsSummary-MobileView.png)
 Desktop View
-![]()
+![](./screenshots/ResultsSummary-DesktopView.png)
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/results-summary-component-DKILz9KI94)
+- [Live Site URL](https://kylecreate-projects.netlify.app/fem%20-%20results%20summary/index.html)
 
 ## My process
 
