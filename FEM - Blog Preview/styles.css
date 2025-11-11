@@ -1,0 +1,147 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Global Changes w/ Root */
+:root {
+    /* Colors */
+    --clr-yellow: hsl(47, 88%, 63%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-gray-500: hsl(0, 0%, 42%);
+    --clr-gray-950: hsl(0, 0%, 7%);
+
+    /* Font */
+    --FF: "Figtree", sans-serif;
+
+    --FS-16: 1rem;
+    --FS-25: 1.55rem;
+
+    --FW-500: 500;
+    --FW-800: 800;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-16);
+}
+
+.blog-subject,
+.blog-date,
+.blog-author-name {
+    color: var(--clr-gray-950);
+}
+
+.blog-subject,
+.blog-title,
+.blog-author-name {
+    font-weight: var(--FW-800);
+}
+
+.blog-date,
+.blog-desc {
+    font-weight: var(--FW-500);
+}
+
+.blog-title {
+    cursor: pointer;
+    font-size: var(--FS-25);
+}
+
+.blog-title:hover,
+.blog-title:active {
+    color: var(--clr-yellow);
+}
+
+.blog-desc {
+    color: var(--clr-gray-500);
+}
+
+/* General -- Mobile & Desktop View */
+body {
+    max-width: 375px;
+    max-height: 100%;
+    background-color: var(--clr-yellow);
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 50%;
+    background-color: var(--clr-white);
+    border: 2px solid var(--clr-black);
+    padding: 1.875em;
+    border-radius: 15px;
+    box-shadow: 0.6em 0.5em 0px 0.1em var(--clr-black);
+    cursor: pointer;
+    transition: box-shadow 0.15s ease-in;
+}
+
+.container:hover,
+.container:active {
+    box-shadow: 0.9em 0.813em 0px 0.1em var(--clr-black);
+}
+
+#blog-image {
+    border-radius: 12px;
+    margin-bottom: 1.2em;
+}
+
+.blog-subject {
+    background-color: var(--clr-yellow);
+    width: 24%;
+    padding: 0.3em;
+    border-radius: 4px;
+    margin-bottom: 0.6em;
+}
+
+.blog-date,
+.blog-title,
+.blog-desc {
+    margin-bottom: 0.95em;
+}
+
+.blog-author-info {
+    display: flex;
+}
+
+.blog-author-image {
+    width: 15%;
+    height: 15%;
+}
+
+.blog-author-name {
+    margin-top: 0.95em;
+    margin-left: 0.95em;
+}
