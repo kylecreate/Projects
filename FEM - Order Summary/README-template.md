@@ -31,8 +31,8 @@ Desktop View
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/order-summary-component-dVeoN_fyZ4)
+- [Live Site URL](https://kylecreate-projects.netlify.app/fem%20-%20order%20summary/index.html)
 
 ## My process
 
