@@ -1,0 +1,222 @@
+/* Complete Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+p {
+    margin-block-end: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Root Changes */
+:root {
+    /* Colors */
+    --clr-blue-100: hsl(225, 100%, 94%);
+    --clr-blue-700: hsl(245, 75%, 52%);
+    --clr-blue-50: hsl(225, 100%, 98%);
+    --clr-gray-600: hsl(224, 23%, 55%);
+    --clr-blue-950: hsl(223, 47%, 23%);
+    --clr-shad-black: hsla(0, 0%, 0%, 0.59);
+
+    /* Font */
+    --FF: "Red Hat Display", sans-serif;
+
+    --FS-13: 0.813rem; /* 13px */
+    --FS-16: 1rem;     /* 16px */
+    --FS-22: 1.375rem; /* 22px */
+
+    --FW-500: 500;
+    --FW-700: 700;
+    --FW-900: 900;
+}
+
+/* Typography */
+body {
+    font-family: var(--FF);
+    font-size: var(--FS-16);
+    font-weight: var(--FW-500);
+}
+
+.summary-title,
+.plan-title {
+    font-weight: var(--FW-900);
+}
+
+.summary-title {
+    color: var(--clr-blue-950);
+    font-size: var(--FS-22);
+}
+
+.summary-desc,
+.plan-price,
+.plan-cancel {
+    color: var(--clr-gray-600);
+}
+
+.plan-title,
+.plan-price {
+    font-size: var(--FS-13);
+}
+
+.plan-change {
+    color: var(--clr-blue-700);
+    font-size: var(--FS-13);
+}
+
+.plan-pay-btn,
+.plan-cancel-btn {
+    font-weight: var(--FW-900);
+}
+
+.plan-pay-btn {
+    color: var(--clr-blue-100);
+}
+
+.plan-cancel-btn {
+    text-decoration: none;
+}
+
+/* General -- Mobile View */
+body {
+    max-width: 375px;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: var(--clr-blue-50);
+    margin: 0 auto;
+    margin-top: 25%;
+    padding-bottom: 2.5em;
+    max-width: 325px;
+    border-radius: 12px;
+    box-shadow: 1px 0.3em 1.875em -0.813em var(--clr-shad-black);
+}
+
+.hero-image {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 1.5em;
+}
+
+.summary-title,
+.summary-desc {
+    text-align: center;
+    margin-bottom: 0.813em;
+}
+
+.summary-desc {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1.2em;
+}
+
+.plan-container {
+    background-color: var(--clr-blue-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 1.2em;
+    padding: 0.6em;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.plan-img {
+    margin-right: 0.6em;
+}
+
+.plan-info {
+    margin-right: 3.75em;
+}
+
+.plan-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-change:hover,
+.plan-change:active {
+    text-decoration: none;
+}
+
+.plan-pay-btn {
+    background-color: var(--clr-blue-700);
+    border: none;
+    padding: 0.8em;
+    border-radius: 10px;
+    width: 85%;
+    margin-bottom: 1.2em;
+    transition: background-color 0.2s ease-in;
+}
+
+.plan-change,
+.plan-pay-btn:hover,
+.plan-pay-btn:active,
+.plan-cancel-btn:hover,
+.plan-cancel-btn:active {
+	cursor: pointer;
+}
+
+.plan-pay-btn:hover,
+.plan-pay-btn:active {
+    background-color: var(--clr-gray-600);
+}
+
+.plan-cancel-btn {
+    color: var(--clr-gray-600);
+    transition: color 0.1s ease-in;
+}
+
+.plan-cancel-btn:hover,
+.plan-cancel-btn:active {
+    color: var(--clr-blue-950);
+}
+
+/* General -- Desktop View */
+@media (min-width: 1024px) {
+    body {
+        max-width: 1024px;
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+
+    .container {
+        max-width: 375px;
+    }
+}
