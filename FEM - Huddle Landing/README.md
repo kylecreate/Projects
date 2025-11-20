@@ -32,8 +32,8 @@ Desktop View
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/huddle-landing-page-HRZNRmHdgl)
+- [Live Site URL](https://kylecreate-projects.netlify.app/fem%20-%20huddle%20landing/index.html)
 
 ## My process
 
